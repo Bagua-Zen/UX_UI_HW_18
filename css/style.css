@@ -30,16 +30,68 @@ header p {
 }
 
 .heroImg {
+  display: flex;
   background-color: #EBEBEB;
-  padding: 100px 15px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding:2%;
   background-color: #FFFFFF;
   text-align: center;
+  justify-content: center;
+}
+.portrait{
+  max-height: 500px;
+  max-width: 500px;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+
+.aboutMe {
+  display: flex; 
+  flex-direction: column;
+  min-height: fit-content;
+  text-align: left;
+  min-width: none;
+  padding: 2%;
+}
+
+.flexContainer {
+  display:flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+#uiDesign{
+  display:flex;
+  flex-direction: column; 
+  width: 33%;
+  max-width: 150px;
+  background-color: #3F4763;
+  padding:1%;
+  
+}
+#uxDesign{
+  display:flex;
+  flex-direction: column; 
+  width: 33%;
+  max-width: 150px;
+  background-color: #3F4763;
+  padding:1%;
+}
+#userTesting{ 
+  display:flex;
+  flex-direction: column; 
+  width: 33%;
+  max-width: 150px;
+  background-color: #3F4763;
+  padding:1%;
 }
 
 button {
