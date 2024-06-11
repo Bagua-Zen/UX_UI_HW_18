@@ -31,7 +31,7 @@ header p {
 
 .heroImg {
   display: flex;
-  background-color: #EBEBEB;
+  background-color: #888a96;
   padding: 15px;
   align-items: center;
   justify-content: center;
@@ -42,30 +42,30 @@ header p {
   flex-direction: row-reverse;
   padding:2%;
   background-color: #FFFFFF;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-around;
 }
-.portrait{
-  max-height: 500px;
-  max-width: 500px;
-  min-height: 100px;
-  min-width: 100px;
+
+.flexPic {
+  min-height: fit-content;
+  max-height: fit-content;
 }
 
 
 .aboutMe {
-  display: flex; 
   flex-direction: column;
   min-height: fit-content;
   text-align: left;
   min-width: none;
+  max-width: 400px;
   padding: 2%;
 }
 
 .flexContainer {
   display:flex;
+  border: 5px solid black;
   justify-content: space-around;
-  padding: 2%;
+  padding: 5%;
+  max-height: 350px;
 }
 
 #uiDesign{
@@ -74,8 +74,10 @@ header p {
   width: 33%;
   max-width: 150px;
   background-color: #3F4763;
-  padding:1%;
-  
+  color: #FFFFFF;
+  padding:1.5%;
+  align-items: center;
+  justify-content: space-around;
 }
 #uxDesign{
   display:flex;
@@ -83,7 +85,11 @@ header p {
   width: 33%;
   max-width: 150px;
   background-color: #3F4763;
-  padding:1%;
+  color: #FFFFFF;
+  padding:1.5%;
+  align-items: center;
+  justify-content: space-around;
+  
 }
 #userTesting{ 
   display:flex;
@@ -91,15 +97,67 @@ header p {
   width: 33%;
   max-width: 150px;
   background-color: #3F4763;
-  padding:1%;
+  color: #FFFFFF;
+  padding:1.5%;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
-button {
+.myWork{
+  display:flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color:#888a96;
+  color:white;
+  align-items: center;
+  margin:0px;
+}
+
+.workGrid {
+  display:grid;
+  border: 4px solid black;
+  align-content: center;
+  justify-content: center;
+}
+
+#child1{ 
+  display: flex;
+  flex-direction: column;
+  background-color: #56596d;
+  border: 3px solid black;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  max-width: 240px;
+  padding: 2%;
+  margin: 2%;
+} 
+
+#child2{ 
+  display: flex;
+  flex-direction: column;
+  background-color: #56596d;
+  border: 3px solid black;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  max-width: 240px;
+  padding: 2%;
+  margin: 2%;
+}
+
+.workgrid button {
+  align-items: center;
   padding: 15px;
   background-color: #373738;
   color: white;
   font-size: 15px;
   border-radius: 4px;
+  width: 200px;
 }
 
 footer {
