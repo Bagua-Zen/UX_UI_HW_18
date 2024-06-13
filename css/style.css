@@ -35,130 +35,152 @@ header p {
   padding: 15px;
   align-items: center;
   justify-content: center;
+  margin: 0%;
 }
 
 .content {
   display: flex;
   flex-direction: row-reverse;
-  padding:2%;
-  background-color: #FFFFFF;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+  padding: 4%;
+  align-content: center;
+  background-color: #FFFFFF;
+  max-width: 60%;
+  border: 4px solid black;
 }
 
 .flexPic {
-  min-height: fit-content;
-  max-height: fit-content;
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 40%;
+  min-height: 40%;
+  border: 4px solid black;
 }
 
-
 .aboutMe {
+  display: flex;
   flex-direction: column;
-  min-height: fit-content;
   text-align: left;
-  min-width: none;
-  max-width: 400px;
-  padding: 2%;
+  max-width: 45%;
+  min-width: 20%;
+  max-height: 30%;
+}
+
+.mySkills{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  background-color: #888a96;
+  color:white;
 }
 
 .flexContainer {
   display:flex;
-  border: 5px solid black;
+  align-self: center;
+  width: 75%;
+  border: 4px solid black;
   justify-content: space-around;
   padding: 5%;
-  max-height: 350px;
+  background-color: #3F4763;
 }
 
 #uiDesign{
   display:flex;
+  border: 3px solid black;
   flex-direction: column; 
   width: 33%;
   max-width: 150px;
-  background-color: #3F4763;
-  color: #FFFFFF;
-  padding:1.5%;
-  align-items: center;
-  justify-content: space-around;
-}
-#uxDesign{
-  display:flex;
-  flex-direction: column; 
-  width: 33%;
-  max-width: 150px;
-  background-color: #3F4763;
-  color: #FFFFFF;
-  padding:1.5%;
-  align-items: center;
-  justify-content: space-around;
-  
-}
-#userTesting{ 
-  display:flex;
-  flex-direction: column; 
-  width: 33%;
-  max-width: 150px;
-  background-color: #3F4763;
+  background-color: #56596d;
   color: #FFFFFF;
   padding:1.5%;
   padding-top: 30px;
   align-items: center;
-  justify-content: space-around;
+  margin: 2%;
+  
+}
+
+#uxDesign{
+  display:flex;
+  border: 3px solid black;
+  flex-direction: column; 
+  width: 33%;
+  max-width: 150px;
+  background-color: #56596d;
+  color: #FFFFFF;
+  padding:1.5%;
+  padding-top: 30px;
+  align-items: center;
+  margin: 2%;
+}
+
+#userTesting{ 
+  display:flex;
+  border: 3px solid black;
+  flex-direction: column; 
+  width: 33%;
+  max-width: 150px;
+  background-color: #56596d;
+  color: #FFFFFF;
+  padding:1.5%;
+  padding-top: 30px;
+  align-items: center;
   text-align: center;
+  margin: 2%;
 }
 
 .myWork{
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 5px;
   background-color:#888a96;
   color:white;
   align-items: center;
-  margin:0px;
+  margin:0%;
 }
 
 .workGrid {
+  background-color: #3F4763;
   display:grid;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
   border: 4px solid black;
-  align-content: center;
-  justify-content: center;
+  padding: 20px;
+  margin: 10px;
 }
 
 #child1{ 
-  display: flex;
-  flex-direction: column;
-  background-color: #56596d;
   border: 3px solid black;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  text-align: center;
-  max-width: 240px;
-  padding: 2%;
+  background-color: #56596d;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  padding: 5%;
+  padding-top: 10%;
   margin: 2%;
 } 
 
 #child2{ 
+  border: 3px solid black;
+  background-color: #56596d;
   display: flex;
   flex-direction: column;
-  background-color: #56596d;
-  border: 3px solid black;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  text-align: center;
-  max-width: 240px;
-  padding: 2%;
+  justify-content: space-around;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  padding: 5%;
+  padding-top: 10%;
   margin: 2%;
 }
 
-.workgrid button {
-  align-items: center;
-  padding: 15px;
-  background-color: #373738;
-  color: white;
-  font-size: 15px;
-  border-radius: 4px;
-  width: 200px;
-}
 
 footer {
   background-color: #373738;
@@ -177,4 +199,64 @@ footer ul {
 footer li {
   vertical-align: inline-block;
   padding: 0px 7px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+   width: 100%;
+   background-color: aqua;  }
+}
+
+@media screen and (max-width: 1520px) {
+  .flexPic {
+   display: flex;
+   height:50%;
+   width: 50%;
+   }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+   display: flex;
+   flex-direction:column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .workGrid {
+   display: flex;
+   flex-direction:column;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flexContainer {
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   align-items: center;
+   width: 80%;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #child1 {
+   display: flex;
+   flex-direction:column;
+   align-self: center;
+   width: 30%;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #child2 {
+   display: flex;
+   flex-direction:column;
+   align-self: center;
+   width: 30%;
+    
+   } 
 }
